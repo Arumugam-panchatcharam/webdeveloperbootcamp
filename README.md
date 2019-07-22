@@ -26,7 +26,8 @@ Now type cd in the terminal and hit enter to go into the root directory ~
 Enter the following:
 
 ```text
-mkdir data echo "mongod --dbpath=data --nojournal" > mongod chmod a+x mongod
+mkdir data 
+echo "mongod --dbpath=data --nojournal" > mongod chmod a+x mongod
 ```
 
 Now, in order to run mongod you'll first need to cd into root ~ then run ./mongod Additionally, after you're up and running with mongo, be sure to shut down your ./mongod server each time you're done working. You can do this with ctrl + c If you leave it running then Cloud 9 could timeout and cause mongo to crash. If this happens, try the following steps to repair it. From the command line, run:
